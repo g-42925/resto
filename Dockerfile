@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install all dependencies (workspaces)
-RUN npm install
+RUN npm install --include=optional
 
 # Build the web application
 RUN npm run build
